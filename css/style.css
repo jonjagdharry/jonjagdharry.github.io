@@ -1,2 +1,43 @@
-h1 {
-  color: blue; }
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+img {
+  max-width: 100%; }
+
+header {
+  background: #757575;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2em; }
+  header .logo {
+    color: #eee;
+    flex: 2; }
+    header .logo h1 {
+      margin-bottom: 0; }
+    header .logo h3 {
+      color: #282828;
+      margin-top: 0; }
+  header ul {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none; }
+    header ul li {
+      flex: 1;
+      line-height: 1;
+      text-align: center;
+      position: relative; }
+      header ul li a {
+        color: #eee;
+        display: block;
+        padding: 1em 0;
+        text-decoration: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+        width: 100%; }
