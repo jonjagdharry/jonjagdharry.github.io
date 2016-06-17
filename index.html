@@ -1,5 +1,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<script src="js/anchorScroll.js"></script>
 </head>
 
 <header>
@@ -10,32 +12,57 @@
 
 	<ul class="menu">
 		<li class="about">
-			<a href="#">About</a>
+			<a href="#about" class="scroll">About</a>
 		</li>
 		<li class="work">
-			<a href="#">Work</a>
+			<a href="#work" class="scroll">Work</a>
 		</li>
 		<li class="contact">
-			<a href="#">Contact Me</a>
+			<a href="#contact" class="scroll">Contact Me</a>
 		</li>
 	</ul>
 </header>
 
-<div>
+<div class="banner">
+	<a href="#contact" class="button">Let's Talk</a>
 	<img src="images/background.jpg" />
+</div>
+
+<div class="about" id="about">
+	<h2>About Me</h2>
+	<div class="about_wrapper">
+		<img src="images/family.jpg" width="400" height="400" alt="Family" class="family" />
+		<div class="about_content">
+			<p>Hey! My name is Jon and am currently located in Savannah, GA with my wife Bethany and our pup Riley. I graduated from Southern Polytechnic State University with a degree in Computer Engineering Technology in 2013. From there, I have gained experience in both the corporate world and small business. Over the course of my career, I have become very passionate about creating clean, effecient code. My knowledge of Sass and tools such as Gulp and Grunt has grown tremendously, and continues to daily. If you'd like to learn more, let's get in touch!</p>
+			<p>I am a Magento Frontend Certified Developer who enjoys the challenges of the eCommerce world. I have experience in building both custom Magento and Shopify stores, along with utilizing Casperjs to execute functional automated tests.</p>
+			<img src="images/icons/middle_frontend_developer.png" alt="Magento Certified" />
+			<a href="#contact" class="button">Let's Talk</a>
+		</div>
+	</div>
 </div>
 
 <div class="contact" id="contact">
 	<h2>Let's Get in Touch!</h2>
+	<p>Feel free to reach out to discuss more about my experience and how I can help you grow your business!</p>
 	<ul>
 		<li class="linkedin">
-			<a href="#"><i class="fa fa-camera-retro"></i></a>
+			<a href="//www.linkedin.com/in/jonathan-jagdharry-89807243"><img src="images/icons/linkedin.png" alt="LinkedIn" /></a>
 		</li>
 		<li class="email">
-			<a href="#"></a>
+			<a href="mailto:jonathan.jagdharry@gmail.com"><img src="images/icons/email.png" alt="Email" /></a>
 		</li>
 		<li class="github">
-			<a href="#"></a>
+			<a href="//github.com/jonjagdharry"><img src="images/icons/github.png" alt="Github" /></a>
 		</li>
 	</ul>
 </div>
+<div class="work" id="work">
+	<h2>Previous Projects</h2>
+	<p>Details Coming Soon!</p>
+</div>
+
+<footer>
+	<p>Jon Jagdharry</p>
+	<a href="mailto:jonathan.jagdharry@gmail.com">jonathan.jagdharry@gmail.com</a>
+</footer>
+

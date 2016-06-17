@@ -23,7 +23,6 @@ header {
 		flex: 1;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		list-style: none;
 
 		li {
 			flex: 1;
@@ -44,4 +43,48 @@ header {
 			}
 		}
 	}
+}
+
+.banner {
+	position: relative;
+
+	.button {
+		background: #282828;
+		color: #fff;
+		padding: 15px 35px;
+		position: absolute;
+	    transform: translate(-50%,-50%);
+	    left: 50%;
+	    top: 50%;
+
+	    &:hover {
+	    	background: transparent;
+	    	color: #282828;
+	    }
+	}
+}
+
+footer {
+	background: #757575;
+	color: #fff;
+	margin-top: 3em;
+	padding: 2em 0;
+	text-align: center;
+	
+	p {
+		margin-top: 0;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+header,
+footer,
+.banner {
+    padding-left: calc((100vw - 100%) / 2);
+    padding-right: calc((100vw - 100%) / 2);
+    margin-left: calc(0% - (100vw - 100%) / 2);
+    margin-right: calc(0% - (100vw - 100%) / 2);
 }

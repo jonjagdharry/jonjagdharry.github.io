@@ -1,0 +1,22 @@
+#contact {
+  margin-bottom: 3em;
+  text-align: center;
+  
+  ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    li {
+      margin-right: 15px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    img {
+      width: 20px;
+    }
+  }
+}
